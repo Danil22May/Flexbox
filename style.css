@@ -1,0 +1,49 @@
+body{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 575px;
+    height: 425px;
+}
+.element{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 2px;
+    margin: 5px;
+    flex: 1 0 15%;
+    max-width: 90px;
+    font-family: sans-serif;
+    color: white;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    cursor: pointer;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.green{
+    background-image: linear-gradient(to bottom right, rgb(135, 240, 79), rgb(5, 177, 80));
+}
+.yellow{
+    background-image: linear-gradient(to bottom right, rgb(229, 240, 79), rgb(129, 165, 8));
+}
+.red{
+    background-image: linear-gradient(to bottom right, rgb(240, 79, 79), rgb(177, 36, 5));
+}
+.blue{
+    background-image: linear-gradient(to bottom right, rgb(87, 112, 235), rgb(64, 22, 162));
+}
